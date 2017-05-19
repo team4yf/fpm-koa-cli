@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh" class="grey lighten-4">
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="/stylesheets/icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/materialize.min.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+    {% block style %} {% endblock %} 
+  </head>
+  <body>
+    {% block content %} {% endblock %}
+
+    <footer class="page-footer blue-grey lighten-5">
+      <div class="footer-copyright">
+        <div class="container center grey-text">
+          <p>© 2017 Copyright YunPlus.IO</p>
+        </div>
+      </div>
+    </footer>
+  
+  </body>
+  <script src="/javascripts/jquery.min.js"></script>
+  <script src="/javascripts/materialize.min.js"></script>
+  <script>
+    $().ready(function () {
+    });
+
+  </script>
+  {% block js %} {% endblock %}
+</html>
